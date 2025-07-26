@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Vaibhav Gupta - Contact{% endblock %}
+
+{% block content %}
+<section class="contact-hero">
+    <div class="container">
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-subtitle">Let's connect and discuss opportunities</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2 class="section-title">Send a Message</h2>
+                <form class="contact-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>bibhu.2005ssj@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+91-8527889187</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Vellore, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-section">
+                    <h3>Connect with me</h3>
+                    <div class="social-links-grid">
+                        <a href="https://www.linkedin.com/in/vaibhav-gupta-96158827b/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Vaibhavking8" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:bibhu.2005ssj@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="availability-section">
+    <div class="container">
+        <h2 class="section-title">Availability</h2>
+        <div class="availability-grid">
+            <div class="availability-card">
+                <div class="availability-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Job Opportunities</h3>
+                <p>Open to entry-level positions in AI, software development, and data science.</p>
+            </div>
+            <div class="availability-card">
+                <div class="availability-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Collaborations</h3>
+                <p>Interested in collaborative projects and hackathons.</p>
+            </div>
+            <div class="availability-card">
+                <div class="availability-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Internships</h3>
+                <p>Seeking internship opportunities to gain practical experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

@@ -1,0 +1,74 @@
+Vaibhav Gupta
+STUDENT | TECH ENTHUSIAST
+Vellore, Tamil Nadu | +91-8527889187 | bibhu.2005ssj@gmail.com
+LinkedIn | GitHub 
+
+Objective
+ 
+Enthusiastic and driven AI Software Engineering student with a strong foundation in computer science, programming, and machine learning. Seeking an entry-level role to apply academic knowledge and project experience in solving real-world problems, contributing to the field of AI and software development.
+
+Education
+ 
+Bachelor of Technology - BTech, CSE(IOT)	2023 - 2027
+Vellore Institute of Technology
+Grade: 9.3 CGPA
+
+Bachelor of Science - BS, Data Science	2023-2027
+Indian Institute of Technology, Madras
+Grade: 8.6 CGPA
+
+High School Diploma, Engineering	2021-2023
+Air Force Golden Jubilee Institute
+Grade: A+
+
+Skills & abilities
+ 
+•	Programming Languages: Python, C++, Java, C 
+•	Data Science: Data Engineering, Data Analytics, SQL, Microsoft Azure, Algorithms 
+•	R programming
+•	Machine Learning: Supervised ML, Regression, Classification, Anomaly Detection, NLP 
+•	Web Development: HTML, CSS, JavaScript
+•	Frameworks & Tools: Flask, React.js, Microsoft Fabric, Azure AI 
+•	Cloud Computing: Azure
+•	Game Development: Unity  
+ 
+CERTIFICATIONS
+ 
+Machine Learning Specialization	Mar 2025
+Coursera
+
+CS50x	 Dec 2024
+CS50
+
+Microsoft Applied Skills: Implement a data science and machine learning solution 
+with Microsoft Fabric	Dec 2024
+Microsoft
+
+Microsoft Certified: Azure Data Scientist Associate	Jun 2024
+Microsoft
+
+Microsoft Applied Skills: Build a natural language processing solution 
+with Azure AI Language	Feb 2024
+Microsoft
+
+Python	Jan 2024
+HackerRank
+
+PROJECTS
+ 
+Dish Dynamics - A VIT Mess Manager 	Feb 2025 - Apr 2025
+VIT Mess Manager is a full-stack web application designed to streamline and enhance the management of mess (cafeteria) operations at VIT. The platform provides tools for students and administrators to manage food preferences, track and analyze food waste, and improve overall mess efficiency.
+
+Tower of Hanoi - Interactive Web Game	Nov 2024 - Dec 2024
+An interactive web application implementing the Tower of Hanoi puzzle using React, featuring a drag-and-drop interface, dynamic disk sizing, and audio-visual feedback. Developed as part of CS50x.
+
+Languages
+ 
+•	English
+•	Hindi
+•	Japanese
+
+E XTRA CURRICULAR ACTIVITIES
+ 
+Participated in multiple events and Hackathons conducted at college level.
+Participated in Mathworks drone challenge.
