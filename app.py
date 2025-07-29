@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, send_file
 import os
 
 app = Flask(__name__)
@@ -38,5 +38,14 @@ def contact():
     
     return render_template('contact.html')
 
+@app.route('/download-resume')
+def download_resume():
+    try:
+        return send_file('Resume.pdf', as_attachment=True, download_name='Vaibhav_Gupta_Resume.pdf')
+    except FileNotFoundError:
+        flash('Resume file not found.', 'error')
+        return redirect(url_for('home'))
+
 if __name__ == '__main__':
-    app.run(debug=True) 
+    port = int(os.environ.get("PORT", 5000))  # Render provides the port
+    app.run(host="0.0.0.0", port=port, debug=True)
