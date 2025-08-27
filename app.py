@@ -20,6 +20,10 @@ def certifications():
 def projects():
     return render_template('projects.html')
 
+@app.route('/experience')
+def experience():
+    return render_template('experience.html')
+
 @app.route('/education')
 def education():
     return render_template('education.html')
