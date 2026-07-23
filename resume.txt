@@ -1,74 +1,66 @@
-Vaibhav Gupta
-STUDENT | TECH ENTHUSIAST
-Vellore, Tamil Nadu | +91-8527889187 | bibhu.2005ssj@gmail.com
-LinkedIn | GitHub 
+﻿Vaibhav Gupta
+Vellore, Tamil Nadu, India | bibhu.2005ssj@gmail.com | +91-8527889187 | LinkedIn | GitHub
 
-Objective
- 
-Enthusiastic and driven AI Software Engineering student with a strong foundation in computer science, programming, and machine learning. Seeking an entry-level role to apply academic knowledge and project experience in solving real-world problems, contributing to the field of AI and software development.
+Experience
+Technology Analyst Intern – Citicorp June – July 2026
+• Built Tableau API-based delivery pipelines with one-click Hyper file generation, cutting manual report turnaround
+
+and scaling across 10+ Oracle tables
+• Engineered a Jira analytics pipeline surfacing 7000+ tickets in a single view, streamlining request status tracking
+
+and reporting
+Space Tech Entrepreneur Intern – India Space Lab June – July 2025
+• Completed 45-day intensive training in drone technology, satellite systems, rocketry, and space astronomy
+
+applications
+• Built an autonomous mission control system on ESP32 with real-time telemetry using embedded C for IoT
+
+applications
 
 Education
- 
-Bachelor of Technology - BTech, CSE(IOT)	2023 - 2027
-Vellore Institute of Technology
-Grade: 9.3 CGPA
+Vellore Institute of Technology, B.Tech in Computer Science (IoT) – CGPA: 9.36/10 2023 – 2027
+Indian Institute of Technology, Madras, BS in Data Science – CGPA: 8.6/10 2023 – 2027
+Air Force Golden Jubilee Institute, High School Diploma (Engineering) 2020 – 2023
+12th Grade: 94.0% | 10th Grade: 95.8%
 
-Bachelor of Science - BS, Data Science	2023-2027
-Indian Institute of Technology, Madras
-Grade: 8.6 CGPA
+Projects
+Autonomous Mission Control System for Small Satellite Operations Jun – Jul 2025
+• Developed IoT-based mission control system simulating complete CanSat operations with DHT22 sensors and
 
-High School Diploma, Engineering	2021-2023
-Air Force Golden Jubilee Institute
-Grade: A+
+real-time telemetry
+• Implemented automated mission phase management with emergency abort capabilities and continuous
 
-Skills & abilities
- 
-•	Programming Languages: Python, C++, Java, C 
-•	Data Science: Data Engineering, Data Analytics, SQL, Microsoft Azure, Algorithms 
-•	R programming
-•	Machine Learning: Supervised ML, Regression, Classification, Anomaly Detection, NLP 
-•	Web Development: HTML, CSS, JavaScript
-•	Frameworks & Tools: Flask, React.js, Microsoft Fabric, Azure AI 
-•	Cloud Computing: Azure
-•	Game Development: Unity  
- 
-CERTIFICATIONS
- 
-Machine Learning Specialization	Mar 2025
-Coursera
+atmospheric data logging
+Dish Dynamics – VIT Mess Manager Feb – Apr 2025
+• Full-stack web app for mess operations with food preference tracking, waste analytics, and efficiency improvements
+• Tech: React, Flask, MongoDB, HTML/CSS/JS
+Taste & Trails Korea – AI-Powered Local Guide System Dec 2025
+• Built a culturally-aware AI travel assistant using steering documents to drive system logic and authentic local
 
-CS50x	 Dec 2024
-CS50
+recommendations
+• Built a production-grade Flask backend with MongoDB Atlas, multi-API orchestration, and serverless deployment
 
-Microsoft Applied Skills: Implement a data science and machine learning solution 
-with Microsoft Fabric	Dec 2024
-Microsoft
+on Vercel
 
-Microsoft Certified: Azure Data Scientist Associate	Jun 2024
-Microsoft
+Technical Skills
+Languages: Python, C/C++, Java
+Embedded & IoT: ESP32, Arduino, IoT Sensors, Embedded C
+Data & ML: SQL, Data Analytics, Data Engineering, NLP, Tableau
+Web & Backend: HTML, CSS, JavaScript, Flask, FastAPI, Vue.js
+Cloud & Tools: Microsoft Azure, AWS, Wokwi, SolidWorks
 
-Microsoft Applied Skills: Build a natural language processing solution 
-with Azure AI Language	Feb 2024
-Microsoft
-
-Python	Jan 2024
-HackerRank
-
-PROJECTS
- 
-Dish Dynamics - A VIT Mess Manager 	Feb 2025 - Apr 2025
-VIT Mess Manager is a full-stack web application designed to streamline and enhance the management of mess (cafeteria) operations at VIT. The platform provides tools for students and administrators to manage food preferences, track and analyze food waste, and improve overall mess efficiency.
-
-Tower of Hanoi - Interactive Web Game	Nov 2024 - Dec 2024
-An interactive web application implementing the Tower of Hanoi puzzle using React, featuring a drag-and-drop interface, dynamic disk sizing, and audio-visual feedback. Developed as part of CS50x.
-
-Languages
- 
-•	English
-•	Hindi
-•	Japanese
-
-E XTRA CURRICULAR ACTIVITIES
- 
-Participated in multiple events and Hackathons conducted at college level.
-Participated in Mathworks drone challenge.
+Certifications
+AWS Certified Solutions Architect – Associate May 2026
+AWS Certified Cloud Practitioner - March 2026
+Google Cybersecurity Professional Certificate Feb 2026
+Coursera Game Theory
+Machine Learning Specialization (Coursera) Mar 2025
+CS50x (Harvard) Dec 2024
+Azure Data Scientist Associate (Microsoft) Jun 2024
+HackerRank Python (Basic)
+HackerRank SQL (Basic)
+Microsoft Applied Skills: Implement a data science and machine learning solution with Microsoft Fabric
+Microsoft Applied Skills: Develop generative AI apps with Azure OpenAI
+and Semantic Kernel
+Microsoft Applied Skills: Implement a data warehouse in microsoft Fabric
+Microsoft Applied Skills: Build a natural language processing solution with Azure AI Language

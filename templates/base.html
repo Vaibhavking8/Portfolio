@@ -95,5 +95,18 @@
     </footer>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+    // Active nav link highlight
+    (function(){
+        var path = window.location.pathname;
+        document.querySelectorAll('.nav-link').forEach(function(link){
+            var href = link.getAttribute('href');
+            if(href === path || (href !== '/' && path.startsWith(href))){
+                link.classList.add('nav-active');
+            }
+        });
+    })();
+    </script>
+    {% block scripts %}{% endblock %}
 </body>
 </html> 

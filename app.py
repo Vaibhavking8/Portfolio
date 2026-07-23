@@ -31,15 +31,20 @@ def education():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
-        name = request.form.get('name')
-        email = request.form.get('email')
-        message = request.form.get('message')
-        
-        # Here you would typically send an email or save to database
-        # For now, we'll just flash a success message
+        # Flask-side fallback (if not using Formspree)
+        name = request.form.get('name', '').strip()
+        email = request.form.get('email', '').strip()
+        message = request.form.get('message', '').strip()
+
+        if not name or not email or not message:
+            flash('Please fill in all required fields.', 'error')
+            return redirect(url_for('contact'))
+
+        # With Formspree the form POSTs directly to Formspree's endpoint,
+        # so this branch only runs if someone hits /contact POST directly.
         flash('Thank you for your message! I will get back to you soon.', 'success')
-        return redirect(url_for('contact'))
-    
+        return redirect(url_for('contact') + '?sent=1')
+
     return render_template('contact.html')
 
 @app.route('/download-resume')

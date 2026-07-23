@@ -10,146 +10,541 @@
     </div>
 </section>
 
+<!-- Stats Bar -->
+<section class="cert-stats-bar">
+    <div class="container">
+        <div class="cert-stats-inline">
+            <div class="cert-stat-item">
+                <span class="cert-stat-num" id="total-count">13</span>
+                <span class="cert-stat-lbl">Total</span>
+            </div>
+            <div class="cert-stat-divider"></div>
+            <div class="cert-stat-item">
+                <span class="cert-stat-num" id="filtered-count">13</span>
+                <span class="cert-stat-lbl">Showing</span>
+            </div>
+            <div class="cert-stat-divider"></div>
+            <div class="cert-stat-item">
+                <span class="cert-stat-num">5</span>
+                <span class="cert-stat-lbl">Microsoft</span>
+            </div>
+            <div class="cert-stat-divider"></div>
+            <div class="cert-stat-item">
+                <span class="cert-stat-num">2</span>
+                <span class="cert-stat-lbl">AWS</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Controls -->
+<section class="cert-filter-section">
+    <div class="container">
+        <div class="filter-header">
+            <h2 class="filter-title"><i class="fas fa-filter"></i> Filter by Role / Domain</h2>
+            <button class="filter-reset" id="reset-filter">
+                <i class="fas fa-times"></i> Clear Filter
+            </button>
+        </div>
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">
+                <i class="fas fa-th"></i> All
+                <span class="tab-count">13</span>
+            </button>
+            <button class="filter-tab" data-filter="cloud-ai">
+                <i class="fas fa-cloud"></i> Cloud / AI
+                <span class="tab-count">7</span>
+            </button>
+            <button class="filter-tab" data-filter="aws">
+                <i class="fab fa-aws"></i> AWS
+                <span class="tab-count">2</span>
+            </button>
+            <button class="filter-tab" data-filter="data-science">
+                <i class="fas fa-chart-bar"></i> Data Science
+                <span class="tab-count">4</span>
+            </button>
+            <button class="filter-tab" data-filter="python">
+                <i class="fab fa-python"></i> Python / Dev
+                <span class="tab-count">4</span>
+            </button>
+            <button class="filter-tab" data-filter="cybersec">
+                <i class="fas fa-shield-alt"></i> Cybersecurity
+                <span class="tab-count">1</span>
+            </button>
+        </div>
+    </div>
+</section>
+
 <section class="certifications-section">
     <div class="container">
-        <div class="certifications-grid">
-            <!-- Machine Learning Specialization -->
-            <div class="certification-card">
+        <!-- Empty state -->
+        <div class="no-results" id="no-results" style="display:none;">
+            <i class="fas fa-search"></i>
+            <p>No certifications match this filter.</p>
+        </div>
+
+        <div class="certifications-grid" id="cert-grid">
+
+            <!-- 1. AWS Certified Solutions Architect – Associate -->
+            <div class="certification-card" data-categories="aws cloud-ai">
+                <div class="cert-org-badge aws-badge">
+                    <i class="fab fa-aws"></i> AWS
+                </div>
                 <div class="cert-header">
-                    <i class="fas fa-brain"></i>
-                    <h3>Machine Learning Specialization</h3>
+                    <div class="cert-icon-wrap aws-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <div>
+                        <h3>AWS Certified Solutions Architect – Associate</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> May 2026</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cert-body">
-                    <div class="cert-org">Coursera</div>
-                    <div class="cert-date">March 2025</div>
                     <p class="cert-description">
-                        Comprehensive machine learning course covering supervised learning, 
-                        unsupervised learning, and deep learning concepts.
+                        Designing and deploying scalable, highly available, and fault-tolerant systems on AWS.
+                        Covers compute, storage, networking, and security architecture.
                     </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">AWS</span>
+                        <span class="cert-tag tag-cloud">Architecture</span>
+                        <span class="cert-tag tag-cloud">Cloud</span>
+                    </div>
                 </div>
                 <div class="cert-footer">
-                    <span class="cert-status completed">Completed</span>
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
                 </div>
             </div>
 
-            <!-- CS50x -->
-            <div class="certification-card">
+            <!-- 2. AWS Certified Cloud Practitioner -->
+            <div class="certification-card" data-categories="aws cloud-ai">
+                <div class="cert-org-badge aws-badge">
+                    <i class="fab fa-aws"></i> AWS
+                </div>
                 <div class="cert-header">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>CS50x</h3>
+                    <div class="cert-icon-wrap aws-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div>
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> March 2026</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cert-body">
-                    <div class="cert-org">CS50</div>
-                    <div class="cert-date">December 2024</div>
                     <p class="cert-description">
-                        Harvard's introduction to computer science course covering programming 
-                        fundamentals, algorithms, and web development.
+                        Foundational understanding of AWS cloud concepts, services,
+                        security, architecture, and pricing models.
                     </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">AWS</span>
+                        <span class="cert-tag tag-cloud">Cloud</span>
+                    </div>
                 </div>
                 <div class="cert-footer">
-                    <span class="cert-status completed">Completed</span>
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
                 </div>
             </div>
 
-            <!-- Microsoft Applied Skills: Data Science -->
-            <div class="certification-card">
+            <!-- 3. Google Cybersecurity Professional Certificate -->
+            <div class="certification-card" data-categories="cybersec">
+                <div class="cert-org-badge google-badge">
+                    <i class="fab fa-google"></i> Google
+                </div>
                 <div class="cert-header">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Microsoft Applied Skills: Data Science & ML</h3>
+                    <div class="cert-icon-wrap cyber-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Google Cybersecurity Professional Certificate</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> February 2026</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cert-body">
-                    <div class="cert-org">Microsoft</div>
-                    <div class="cert-date">December 2024</div>
                     <p class="cert-description">
-                        Implementation of data science and machine learning solutions 
-                        using Microsoft Fabric platform.
+                        Comprehensive cybersecurity program covering threat analysis, network security,
+                        incident response, and security tools via Coursera.
                     </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cyber">Cybersecurity</span>
+                        <span class="cert-tag tag-cyber">Networking</span>
+                        <span class="cert-tag tag-cyber">Incident Response</span>
+                    </div>
                 </div>
                 <div class="cert-footer">
-                    <span class="cert-status completed">Completed</span>
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
                 </div>
             </div>
 
-            <!-- Azure Data Scientist Associate -->
-            <div class="certification-card">
+            <!-- 4. Machine Learning Specialization (Coursera) -->
+            <div class="certification-card" data-categories="data-science python">
+                <div class="cert-org-badge coursera-badge">
+                    <i class="fas fa-graduation-cap"></i> Coursera
+                </div>
                 <div class="cert-header">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Microsoft Certified: Azure Data Scientist Associate</h3>
+                    <div class="cert-icon-wrap ml-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div>
+                        <h3>Machine Learning Specialization</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> March 2025</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cert-body">
-                    <div class="cert-org">Microsoft</div>
-                    <div class="cert-date">June 2024</div>
                     <p class="cert-description">
-                        Professional certification for implementing machine learning models 
+                        Comprehensive ML course by Andrew Ng covering supervised learning,
+                        unsupervised learning, and deep learning fundamentals.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-ai">ML</span>
+                        <span class="cert-tag tag-data">Deep Learning</span>
+                        <span class="cert-tag tag-python">Python</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
+            <!-- 5. Coursera Game Theory -->
+            <div class="certification-card" data-categories="data-science">
+                <div class="cert-org-badge coursera-badge">
+                    <i class="fas fa-graduation-cap"></i> Coursera
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap ml-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <div>
+                        <h3>Game Theory</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Coursera</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Mathematical foundations of strategic decision-making, Nash equilibria,
+                        and applications of game theory in economics and computer science.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-data">Mathematics</span>
+                        <span class="cert-tag tag-data">Economics</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
+            <!-- 6. CS50x (Harvard) -->
+            <div class="certification-card" data-categories="python">
+                <div class="cert-org-badge harvard-badge">
+                    <i class="fas fa-university"></i> Harvard / CS50
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap python-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3>CS50x</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> December 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Harvard's introduction to computer science covering programming fundamentals,
+                        algorithms, data structures, and web development.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-python">C</span>
+                        <span class="cert-tag tag-python">Python</span>
+                        <span class="cert-tag tag-python">Web Dev</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
+            <!-- 7. Azure Data Scientist Associate -->
+            <div class="certification-card" data-categories="cloud-ai data-science">
+                <div class="cert-org-badge microsoft-badge">
+                    <i class="fab fa-microsoft"></i> Microsoft
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap azure-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div>
+                        <h3>Azure Data Scientist Associate</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> June 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Professional certification (DP-100) for implementing machine learning models
                         and AI solutions on Microsoft Azure.
                     </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">Azure</span>
+                        <span class="cert-tag tag-ai">AI / ML</span>
+                        <span class="cert-tag tag-data">Data Science</span>
+                    </div>
                 </div>
                 <div class="cert-footer">
-                    <span class="cert-status completed">Completed</span>
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
                 </div>
             </div>
 
-            <!-- Microsoft Applied Skills: NLP -->
-            <div class="certification-card">
+            <!-- 8. HackerRank Python (Basic) -->
+            <div class="certification-card" data-categories="python">
+                <div class="cert-org-badge hackerrank-badge">
+                    <i class="fab fa-hackerrank"></i> HackerRank
+                </div>
                 <div class="cert-header">
-                    <i class="fas fa-language"></i>
-                    <h3>Microsoft Applied Skills: NLP Solution</h3>
+                    <div class="cert-icon-wrap python-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div>
+                        <h3>Python (Basic)</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> HackerRank</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cert-body">
-                    <div class="cert-org">Microsoft</div>
-                    <div class="cert-date">February 2024</div>
                     <p class="cert-description">
-                        Building natural language processing solutions using 
-                        Azure AI Language services.
+                        Python programming proficiency certification demonstrating core language
+                        skills, data structures, and problem-solving ability.
                     </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-python">Python</span>
+                        <span class="cert-tag tag-python">DSA</span>
+                    </div>
                 </div>
                 <div class="cert-footer">
-                    <span class="cert-status completed">Completed</span>
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
                 </div>
             </div>
 
-            <!-- Python -->
-            <div class="certification-card">
+            <!-- 9. HackerRank SQL (Basic) -->
+            <div class="certification-card" data-categories="python data-science">
+                <div class="cert-org-badge hackerrank-badge">
+                    <i class="fab fa-hackerrank"></i> HackerRank
+                </div>
                 <div class="cert-header">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
+                    <div class="cert-icon-wrap python-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div>
+                        <h3>SQL (Basic)</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> HackerRank</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cert-body">
-                    <div class="cert-org">HackerRank</div>
-                    <div class="cert-date">January 2024</div>
                     <p class="cert-description">
-                        Python programming certification demonstrating proficiency 
-                        in Python development and problem-solving.
+                        SQL fundamentals certification covering queries, joins, aggregations,
+                        and relational database operations.
                     </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-data">SQL</span>
+                        <span class="cert-tag tag-data">Databases</span>
+                    </div>
                 </div>
                 <div class="cert-footer">
-                    <span class="cert-status completed">Completed</span>
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
                 </div>
             </div>
+
+            <!-- 10. MS Applied Skills: Data Science & ML with Fabric -->
+            <div class="certification-card" data-categories="cloud-ai data-science">
+                <div class="cert-org-badge microsoft-badge">
+                    <i class="fab fa-microsoft"></i> Microsoft
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap azure-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h3>Applied Skills: Data Science & ML with Microsoft Fabric</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Implementation of data science and machine learning solutions
+                        using Microsoft Fabric platform.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">Fabric</span>
+                        <span class="cert-tag tag-data">Data Science</span>
+                        <span class="cert-tag tag-ai">ML</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
+            <!-- 11. MS Applied Skills: Generative AI with Azure OpenAI & Semantic Kernel -->
+            <div class="certification-card" data-categories="cloud-ai">
+                <div class="cert-org-badge microsoft-badge">
+                    <i class="fab fa-microsoft"></i> Microsoft
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap azure-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3>Applied Skills: Generative AI with Azure OpenAI & Semantic Kernel</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Developing generative AI applications using Azure OpenAI Service
+                        and Semantic Kernel SDK.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">Azure</span>
+                        <span class="cert-tag tag-ai">Gen AI</span>
+                        <span class="cert-tag tag-ai">LLM</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
+            <!-- 12. MS Applied Skills: Data Warehouse in Microsoft Fabric -->
+            <div class="certification-card" data-categories="cloud-ai data-science">
+                <div class="cert-org-badge microsoft-badge">
+                    <i class="fab fa-microsoft"></i> Microsoft
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap azure-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div>
+                        <h3>Applied Skills: Data Warehouse in Microsoft Fabric</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Building and managing data warehouses using Microsoft Fabric,
+                        including lakehouse architecture and data pipelines.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">Fabric</span>
+                        <span class="cert-tag tag-data">Data Warehouse</span>
+                        <span class="cert-tag tag-data">ETL</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
+            <!-- 13. MS Applied Skills: NLP with Azure AI Language -->
+            <div class="certification-card" data-categories="cloud-ai">
+                <div class="cert-org-badge microsoft-badge">
+                    <i class="fab fa-microsoft"></i> Microsoft
+                </div>
+                <div class="cert-header">
+                    <div class="cert-icon-wrap azure-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div>
+                        <h3>Applied Skills: NLP with Azure AI Language</h3>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-description">
+                        Building natural language processing solutions using
+                        Azure AI Language services including text analysis and entity recognition.
+                    </p>
+                    <div class="cert-tags">
+                        <span class="cert-tag tag-cloud">Azure AI</span>
+                        <span class="cert-tag tag-ai">NLP</span>
+                    </div>
+                </div>
+                <div class="cert-footer">
+                    <span class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+{% endblock %}
 
-<section class="certifications-stats">
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">6</div>
-                <div class="stat-label">Total Certifications</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">6</div>
-                <div class="stat-label">Completed</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">0</div>
-                <div class="stat-label">In Progress</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Microsoft Certifications</div>
-            </div>
-        </div>
-    </div>
-</section>
-{% endblock %} 
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.certification-card');
+    const filteredCount = document.getElementById('filtered-count');
+    const totalCount = document.getElementById('total-count');
+    const noResults = document.getElementById('no-results');
+    const resetBtn = document.getElementById('reset-filter');
+
+    // Set counts from actual DOM on load
+    totalCount.textContent = cards.length;
+    filteredCount.textContent = cards.length;
+
+    function filterCerts(filter) {
+        let visible = 0;
+        cards.forEach(card => {
+            const cats = card.dataset.categories || '';
+            const show = filter === 'all' || cats.includes(filter);
+            card.style.display = show ? '' : 'none';
+            if (show) {
+                card.style.animation = 'none';
+                card.offsetHeight; // reflow
+                card.style.animation = 'certFadeIn 0.4s ease forwards';
+                visible++;
+            }
+        });
+        filteredCount.textContent = visible;
+        noResults.style.display = visible === 0 ? 'flex' : 'none';
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            filterCerts(this.dataset.filter);
+        });
+    });
+
+    resetBtn.addEventListener('click', function () {
+        tabs.forEach(t => t.classList.remove('active'));
+        tabs[0].classList.add('active');
+        filterCerts('all');
+    });
+});
+</script>
+{% endblock %}

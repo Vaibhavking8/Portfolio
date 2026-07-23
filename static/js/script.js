@@ -190,30 +190,28 @@ document.querySelectorAll('.quick-link-card, .certification-card, .project-card,
     });
 });
 
-// Form validation and submission
+// Form validation — let Formspree handle actual submission (no preventDefault)
 document.querySelectorAll('.contact-form').forEach(form => {
     form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
         const formData = new FormData(this);
         const name = formData.get('name');
         const email = formData.get('email');
         const message = formData.get('message');
-        
-        // Basic validation
+
+        // Basic client-side validation only — do NOT preventDefault if valid
         if (!name || !email || !message) {
-            showAlert('Please fill in all fields.', 'error');
+            e.preventDefault();
+            showAlert('Please fill in all required fields.', 'error');
             return;
         }
-        
+
         if (!isValidEmail(email)) {
+            e.preventDefault();
             showAlert('Please enter a valid email address.', 'error');
             return;
         }
-        
-        // Simulate form submission
-        showAlert('Thank you for your message! I will get back to you soon.', 'success');
-        this.reset();
+
+        // Valid — allow the form to submit naturally to Formspree
     });
 });
 
